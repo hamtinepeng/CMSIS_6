@@ -339,6 +339,7 @@ typedef union
 #define CPSR_M_UND                       0x1BU                                  /*!< \brief CPSR: M Undefined mode (PL1) */
 #define CPSR_M_SYS                       0x1FU                                  /*!< \brief CPSR: M System mode (PL1) */
 
+#include "../a-profile/l1_cache.h"
 
 #ifdef __cplusplus
 }

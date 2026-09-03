@@ -19,3 +19,4 @@
 
 // The cp15-interface is located in the profile folder for cortex-a devices
 #include "../a-profile/armv7a_cp15.h"
+#include "../a-profile/armv8a_cp15.h"
