@@ -94,11 +94,13 @@ __STATIC_FORCEINLINE void L1C_CleanInvalidateDCacheMVA(void *va) {
 */
 __STATIC_FORCEINLINE uint8_t __log2_up(uint32_t n)
 {
+  uint8_t log = 0U;
+  uint32_t t = 0U;
+
   if (n < 2U) {
     return 0U;
   }
-  uint8_t log = 0U;
-  uint32_t t = n;
+  t = n;
   while(t > 1U)
   {
     log++;
